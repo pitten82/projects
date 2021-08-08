@@ -12,6 +12,7 @@ import platform
 
 from bleak import BleakClient
 from bleak import _logger as logger
+import bleak
 
 ADDRESS = ("F8:8A:5E:36:CB:34")  # <--- Change to your device's address here if you are using Windows or Linux
 CHARACTERISTIC_UUID_1 = "835ab4c0-51e4-11e3-a5bd-0002a5d5c51b"  # <--- Change to the characteristic you want to enable notifications from.
@@ -41,13 +42,15 @@ async def run(address, debug=True):
         logger.addHandler(h)
 
     async with BleakClient(address) as client:
-        logger.info(f"Connected: {client.is_connected}")
+        # logger.info(f"Connected: {client.is_connected}")
+        print(f"Connected: {client.is_connected}")
 
         await client.start_notify(CHARACTERISTIC_UUID_1, notification_handler)
         await client.start_notify(CHARACTERISTIC_UUID_2, notification_handler)
         await asyncio.sleep(60.0)
         await client.stop_notify(CHARACTERISTIC_UUID_1)
         await client.stop_notify(CHARACTERISTIC_UUID_2)
+        await client.disconnect()
 
 if __name__ == "__main__":
     import os
