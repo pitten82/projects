@@ -284,13 +284,13 @@
          y="53.213482"
          style="stroke-width:0.531342">TAGS in</tspan></text>
     <rect
-       style="fill:#000000;stroke-width:1.5647"
+       style="fill:#0000ff;stroke-width:1.5647"
        id="rect17978"
        width="282.84271"
        height="143.44167"
        x="62.629456"
        y="-478.90408"
-       inkscape:label="{&quot;attr&quot;:&quot;bar&quot;,&quot;max&quot;:500,&quot;min&quot;:0,&quot;tag&quot;:&quot;@1&quot;},{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;0&quot;,&quot;param&quot;:&quot;green&quot;,&quot;tag&quot;:&quot;@1&quot;},{&quot;data&quot;:&quot;500&quot;,&quot;param&quot;:&quot;red&quot;,&quot;tag&quot;:&quot;@1&quot;}]}"
+       inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;0&quot;,&quot;param&quot;:&quot;green&quot;,&quot;tag&quot;:&quot;@1&quot;},{&quot;data&quot;:&quot;500&quot;,&quot;param&quot;:&quot;red&quot;,&quot;tag&quot;:&quot;@1&quot;}]}"
        transform="scale(1,-1)" />
   </g>
 </svg>
